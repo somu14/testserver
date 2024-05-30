@@ -16,7 +16,7 @@ const transporter = nodemailer.createTransport({
   });
 
   app.get("/",(req,res)=>{
-    res.send("hello server is live");
+    res.send("your ip:",req.ip);
   })
 
 app.post("/",(req,res)=>
